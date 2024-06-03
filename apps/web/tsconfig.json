@@ -1,0 +1,25 @@
+{
+	"extends": "@repo/config-typescript/nextjs.json",
+	"compilerOptions": {
+		"strict": true,
+		"plugins": [
+			{
+				"name": "next"
+			}
+		],
+		"paths": {
+			"@/*": ["./src/*"]
+		}
+	},
+	"include": [
+		"next-env.d.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		".next/types/**/*.ts",
+		"tailwind.config.ts",
+		"./dist/types/**/*.ts",
+		"../../packages/ui/src/components/card.tsx",
+		"../../packages/ui/src/components/cardWithImage.tsx"
+	],
+	"exclude": ["node_modules"]
+}

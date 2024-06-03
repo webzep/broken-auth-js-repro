@@ -1,0 +1,20 @@
+{
+	"private": true,
+	"workspaces": [
+		"apps/*",
+		"packages/*"
+	],
+	"scripts": {
+		"build": "turbo build --no-daemon",
+		"dev": "turbo dev --no-daemon --parallel",
+		"lint": "turbo lint --no-daemon --parallel",
+		"start:local": "turbo start:local --no-daemon --parallel",
+		"web": "yarn workspace @repo/web"
+	},
+	"devDependencies": {
+		"@repo/config-eslint": "*",
+		"prettier": "3.2.5",
+		"turbo": "1.13.3"
+	},
+	"packageManager": "yarn@1.22.19"
+}
